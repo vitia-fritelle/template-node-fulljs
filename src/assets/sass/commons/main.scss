@@ -1,4 +1,59 @@
+$backgroundBlack: #000;
+$fontColorWhite: #fff;
+$fontFamilyDefault: 'Roboto', sans-serif;
+
 *{
   margin: 0;
   padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+} 
+
+body{
+  background: $backgroundBlack;
+  color: $fontColorWhite;
+}
+
+h1, h2, h3, h4, p, b, span{
+  font-family: $fontFamilyDefault;
+}
+
+.main-left{
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+
+  & img{
+    width: 120px;
+    height: auto;
+    transition: 0.3s;
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+
+.container{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.footer-contain{
+  margin-top: calc(10px - 160px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  //background-color: transparent;
+  & img{
+    height: 190px;
+    width: auto;
+    transition: 0.3s;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
 }
